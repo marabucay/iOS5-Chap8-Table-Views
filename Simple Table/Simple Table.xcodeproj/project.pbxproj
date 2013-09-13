@@ -15,6 +15,7 @@
 		008B92B717E3112100FF57C2 /* BIDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 008B92B617E3112100FF57C2 /* BIDAppDelegate.m */; };
 		008B92BA17E3112100FF57C2 /* BIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 008B92B917E3112100FF57C2 /* BIDViewController.m */; };
 		008B92BD17E3112200FF57C2 /* BIDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 008B92BB17E3112200FF57C2 /* BIDViewController.xib */; };
+		008B92C417E316F100FF57C2 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 008B92C317E316F100FF57C2 /* star.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		008B92B817E3112100FF57C2 /* BIDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDViewController.h; sourceTree = "<group>"; };
 		008B92B917E3112100FF57C2 /* BIDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDViewController.m; sourceTree = "<group>"; };
 		008B92BC17E3112200FF57C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BIDViewController.xib; sourceTree = "<group>"; };
+		008B92C317E316F100FF57C2 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		008B92AD17E3112100FF57C2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				008B92C317E316F100FF57C2 /* star.png */,
 				008B92AE17E3112100FF57C2 /* Simple Table-Info.plist */,
 				008B92AF17E3112100FF57C2 /* InfoPlist.strings */,
 				008B92B217E3112100FF57C2 /* main.m */,
@@ -150,6 +153,7 @@
 			files = (
 				008B92B117E3112100FF57C2 /* InfoPlist.strings in Resources */,
 				008B92BD17E3112200FF57C2 /* BIDViewController.xib in Resources */,
+				008B92C417E316F100FF57C2 /* star.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
