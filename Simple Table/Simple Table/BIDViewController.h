@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BIDViewController : UIViewController
+@interface BIDViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@property (strong, nonatomic) NSArray *listData;
 
 @end
