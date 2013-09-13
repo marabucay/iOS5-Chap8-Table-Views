@@ -75,13 +75,19 @@
                              SimpleTableIdentifier];
     if (cell == nil) {
         cell = [[UITableViewCell alloc]
-                initWithStyle:UITableViewCellStyleDefault
+                initWithStyle:UITableViewCellStyleValue1
                 reuseIdentifier:SimpleTableIdentifier];
     }
     UIImage *image = [UIImage imageNamed:@"star.png"];
     cell.imageView.image = image;
     NSUInteger row = [indexPath row];
     cell.textLabel.text = [listData objectAtIndex:row];
+    
+    if(row < 7)
+        cell.detailTextLabel.text = @"Mr. Disney";
+    else
+        cell.detailTextLabel.text=@"Mr.Tolkien";
+    
     return cell;
 }
 
