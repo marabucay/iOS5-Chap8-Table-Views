@@ -10,7 +10,12 @@
 
 @interface BIDViewController : UIViewController <UITableViewDataSource, UITabBarDelegate>
 
-@property(strong,nonatomic) NSDictionary *names;
-@property(strong, nonatomic) NSArray *keys;
+@property (strong, nonatomic) IBOutlet UITableView *table;
+@property (strong, nonatomic) IBOutlet UISearchBar *search;
+@property (strong, nonatomic) NSDictionary *allNames;
+@property (strong, nonatomic) NSMutableDictionary *names;
+@property (strong, nonatomic) NSMutableArray *keys;
+- (void)resetSearch;
+- (void)handleSearchForTerm:(NSString *)searchTerm;
 
 @end
