@@ -82,7 +82,7 @@
     cell.imageView.image = image;
     NSUInteger row = [indexPath row];
     cell.textLabel.text = [listData objectAtIndex:row];
-    cell.textLabel.font = [UIFont boldSystemFontOfSize:50];
+    cell.textLabel.font = [UIFont boldSystemFontOfSize:55];
     
     if(row < 7)
         cell.detailTextLabel.text = @"Mr. Disney";
