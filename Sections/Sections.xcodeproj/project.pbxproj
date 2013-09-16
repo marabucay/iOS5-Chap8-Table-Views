@@ -16,6 +16,7 @@
 		002F0A4117E6CD43005FCF43 /* BIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F0A4017E6CD43005FCF43 /* BIDViewController.m */; };
 		002F0A4417E6CD43005FCF43 /* BIDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 002F0A4217E6CD43005FCF43 /* BIDViewController.xib */; };
 		002F0A4B17E6CE91005FCF43 /* sortednames.plist in Resources */ = {isa = PBXBuildFile; fileRef = 002F0A4A17E6CE91005FCF43 /* sortednames.plist */; };
+		002F0A4E17E6DA25005FCF43 /* NSDictionary+MutableDeepCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F0A4D17E6DA25005FCF43 /* NSDictionary+MutableDeepCopy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,8 @@
 		002F0A4017E6CD43005FCF43 /* BIDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDViewController.m; sourceTree = "<group>"; };
 		002F0A4317E6CD43005FCF43 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BIDViewController.xib; sourceTree = "<group>"; };
 		002F0A4A17E6CE91005FCF43 /* sortednames.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sortednames.plist; sourceTree = "<group>"; };
+		002F0A4C17E6DA24005FCF43 /* NSDictionary+MutableDeepCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MutableDeepCopy.h"; sourceTree = "<group>"; };
+		002F0A4D17E6DA25005FCF43 /* NSDictionary+MutableDeepCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MutableDeepCopy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				002F0A4017E6CD43005FCF43 /* BIDViewController.m */,
 				002F0A4217E6CD43005FCF43 /* BIDViewController.xib */,
 				002F0A3417E6CD43005FCF43 /* Supporting Files */,
+				002F0A4C17E6DA24005FCF43 /* NSDictionary+MutableDeepCopy.h */,
+				002F0A4D17E6DA25005FCF43 /* NSDictionary+MutableDeepCopy.m */,
 			);
 			path = Sections;
 			sourceTree = "<group>";
@@ -167,6 +172,7 @@
 				002F0A3A17E6CD43005FCF43 /* main.m in Sources */,
 				002F0A3E17E6CD43005FCF43 /* BIDAppDelegate.m in Sources */,
 				002F0A4117E6CD43005FCF43 /* BIDViewController.m in Sources */,
+				002F0A4E17E6DA25005FCF43 /* NSDictionary+MutableDeepCopy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
