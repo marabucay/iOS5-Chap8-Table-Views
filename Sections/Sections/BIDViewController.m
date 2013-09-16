@@ -16,6 +16,8 @@
 @synthesize table;
 @synthesize search;
 @synthesize allNames;
+@synthesize isSearching;
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -113,6 +115,8 @@
     return key;
 }
 - (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
+    if (isSearching)
+        return nil;
     return keys;
 }
 
@@ -148,6 +152,9 @@
 - (NSIndexPath *)tableView:(UITableView *)tableView
   willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [search resignFirstResponder];
+    isSearching = NO;
+    search.text = @"";
+    [tableView reloadData];
     return indexPath;
 }
 
@@ -167,10 +174,15 @@
     [self handleSearchForTerm:searchTerm];
 }
 - (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {
+    isSearching = NO;
     search.text = @"";
     [self resetSearch];
     [table reloadData];
     [searchBar resignFirstResponder];
+}
+- (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar {
+    isSearching = YES;
+    [table reloadData];
 }
 
 

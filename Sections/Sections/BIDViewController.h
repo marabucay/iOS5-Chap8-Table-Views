@@ -15,6 +15,7 @@
 @property (strong, nonatomic) NSDictionary *allNames;
 @property (strong, nonatomic) NSMutableDictionary *names;
 @property (strong, nonatomic) NSMutableArray *keys;
+@property (assign, nonatomic) BOOL isSearching;
 - (void)resetSearch;
 - (void)handleSearchForTerm:(NSString *)searchTerm;
 
