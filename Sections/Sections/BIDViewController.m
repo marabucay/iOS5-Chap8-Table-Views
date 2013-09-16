@@ -112,6 +112,8 @@
     if ([keys count] == 0)
         return nil;
     NSString *key = [keys objectAtIndex:section];
+    if (key == UITableViewIndexSearch)
+        return nil;
     return key;
 }
 - (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
@@ -125,6 +127,7 @@
 - (void)resetSearch {
     self.names = [self.allNames mutableDeepCopy];
     NSMutableArray *keyArray = [[NSMutableArray alloc] init];
+    [keyArray addObject:UITableViewIndexSearch];
     [keyArray addObjectsFromArray:[[self.allNames allKeys]
                                    sortedArrayUsingSelector:@selector(compare:)]];
     self.keys = keyArray;
@@ -184,6 +187,14 @@
     isSearching = YES;
     [table reloadData];
 }
-
+- (NSInteger)tableView:(UITableView *)tableView
+sectionForSectionIndexTitle:(NSString *)title
+               atIndex:(NSInteger)index {
+    NSString *key = [keys objectAtIndex:index];
+    if (key == UITableViewIndexSearch) {
+        [tableView setContentOffset:CGPointZero animated:NO];
+        return NSNotFound;
+    } else return index;
+}
 
 @end
