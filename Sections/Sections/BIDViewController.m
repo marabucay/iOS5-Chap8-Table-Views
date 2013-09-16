@@ -99,5 +99,9 @@
     NSString *key = [keys objectAtIndex:section];
     return key;
 }
+- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
+    return keys;
+}
+
 
 @end
