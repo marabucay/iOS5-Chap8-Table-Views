@@ -91,4 +91,12 @@
     return cell;
 }
 
+#pragma mark
+#pragma mark Table Delegate Methods
+
+-(NSInteger)tableView:(UITableView *) tableView indentationLevelForRowAtIndexPath: (NSIndexPath *)indexPath{
+    NSUInteger row = [indexPath row];
+    return row;
+}
+
 @end
