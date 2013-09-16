@@ -15,6 +15,7 @@
 		002F0A0117E6A62C005FCF43 /* BIDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F0A0017E6A62C005FCF43 /* BIDAppDelegate.m */; };
 		002F0A0417E6A62C005FCF43 /* BIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F0A0317E6A62C005FCF43 /* BIDViewController.m */; };
 		002F0A0717E6A62C005FCF43 /* BIDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 002F0A0517E6A62C005FCF43 /* BIDViewController.xib */; };
+		002F0A1A17E6AE87005FCF43 /* BIDNameAndColorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F0A1917E6AE87005FCF43 /* BIDNameAndColorCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		002F0A0217E6A62C005FCF43 /* BIDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDViewController.h; sourceTree = "<group>"; };
 		002F0A0317E6A62C005FCF43 /* BIDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDViewController.m; sourceTree = "<group>"; };
 		002F0A0617E6A62C005FCF43 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BIDViewController.xib; sourceTree = "<group>"; };
+		002F0A1817E6AE87005FCF43 /* BIDNameAndColorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDNameAndColorCell.h; sourceTree = "<group>"; };
+		002F0A1917E6AE87005FCF43 /* BIDNameAndColorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDNameAndColorCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 				002F0A0317E6A62C005FCF43 /* BIDViewController.m */,
 				002F0A0517E6A62C005FCF43 /* BIDViewController.xib */,
 				002F09F717E6A62C005FCF43 /* Supporting Files */,
+				002F0A1817E6AE87005FCF43 /* BIDNameAndColorCell.h */,
+				002F0A1917E6AE87005FCF43 /* BIDNameAndColorCell.m */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 				002F09FD17E6A62C005FCF43 /* main.m in Sources */,
 				002F0A0117E6A62C005FCF43 /* BIDAppDelegate.m in Sources */,
 				002F0A0417E6A62C005FCF43 /* BIDViewController.m in Sources */,
+				002F0A1A17E6AE87005FCF43 /* BIDNameAndColorCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +280,7 @@
 				002F0A0C17E6A62C005FCF43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
