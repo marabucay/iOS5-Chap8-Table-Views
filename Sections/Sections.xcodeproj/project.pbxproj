@@ -15,6 +15,7 @@
 		002F0A3E17E6CD43005FCF43 /* BIDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F0A3D17E6CD43005FCF43 /* BIDAppDelegate.m */; };
 		002F0A4117E6CD43005FCF43 /* BIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002F0A4017E6CD43005FCF43 /* BIDViewController.m */; };
 		002F0A4417E6CD43005FCF43 /* BIDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 002F0A4217E6CD43005FCF43 /* BIDViewController.xib */; };
+		002F0A4B17E6CE91005FCF43 /* sortednames.plist in Resources */ = {isa = PBXBuildFile; fileRef = 002F0A4A17E6CE91005FCF43 /* sortednames.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		002F0A3F17E6CD43005FCF43 /* BIDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDViewController.h; sourceTree = "<group>"; };
 		002F0A4017E6CD43005FCF43 /* BIDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDViewController.m; sourceTree = "<group>"; };
 		002F0A4317E6CD43005FCF43 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BIDViewController.xib; sourceTree = "<group>"; };
+		002F0A4A17E6CE91005FCF43 /* sortednames.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sortednames.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		002F0A3417E6CD43005FCF43 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				002F0A4A17E6CE91005FCF43 /* sortednames.plist */,
 				002F0A3517E6CD43005FCF43 /* Sections-Info.plist */,
 				002F0A3617E6CD43005FCF43 /* InfoPlist.strings */,
 				002F0A3917E6CD43005FCF43 /* main.m */,
@@ -150,6 +153,7 @@
 			files = (
 				002F0A3817E6CD43005FCF43 /* InfoPlist.strings in Resources */,
 				002F0A4417E6CD43005FCF43 /* BIDViewController.xib in Resources */,
+				002F0A4B17E6CE91005FCF43 /* sortednames.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

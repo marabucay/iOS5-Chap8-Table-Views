@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BIDViewController : UIViewController
+@interface BIDViewController : UIViewController <UITableViewDataSource, UITabBarDelegate>
+
+@property(strong,nonatomic) NSDictionary *names;
+@property(strong, nonatomic) NSArray *keys;
 
 @end
